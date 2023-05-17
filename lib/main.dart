@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter_spotify_africa_assessment/routes.dart';
 
 void main() {
@@ -18,4 +18,26 @@ class PalotaAssessmentApp extends StatelessWidget {
       onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
+}*/
+
+import 'package:flutter/material.dart';
+import 'package:flutter_spotify_africa_assessment/routes.dart';
+
+void main() {
+  runApp(const PalotaAssessmentApp());
 }
+
+class PalotaAssessmentApp extends StatelessWidget {
+  const PalotaAssessmentApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Palota Spotify Africa Assessment',
+      theme: ThemeData.dark(),
+      initialRoute: AppRoutes.startUp,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
+    );
+  }
+}
+
